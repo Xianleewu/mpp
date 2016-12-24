@@ -1,41 +1,47 @@
-#
-# Normal rules
-#
-.*
-*.swp
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
 
-#
-# Generated cmake build files
-#
-# linux Makefile
-build/*/*/CMakeCache.txt
-build/*/*/CMakeFiles/
-build/*/*/CTestTestfile.cmake
-build/*/*/Makefile
-build/*/*/cmake_install.cmake
-build/*/*/mpp/
-build/*/*/osal/
-build/*/*/test/
-build/*/*/utils/
+# Precompiled Headers
+*.gch
+*.pch
 
-#
-# Generated include files
-#
-mpp/version.h
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
 
-#
-# git files that we don't want to ignore even it they are dot-files
-#
-!.gitignore
-!.mailmap
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
 
-# gnu global files
-GPATH
-GRTAGS
-GSYMS
-GTAGS
-ID
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+*.user*
+*.stash
 
-*.orig
-*~
-\#*#
+# Debug files
+*.dSYM/
+*.su
+
+#source insight
+*.IAB
+*.IAD
+*.IMB
+*.IMD
+*.PFI
+*.PO
+*.PR
+*.PRI
+*.PS
+*.WK3
